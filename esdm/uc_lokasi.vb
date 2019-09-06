@@ -10,17 +10,17 @@
     Private Sub dgv_RowPostPaint(sender As System.Object, e As System.Windows.Forms.DataGridViewRowPostPaintEventArgs) Handles dgv.RowPostPaint
         Dim grid As DataGridView = CType(sender, DataGridView)
         Dim rowIdx As String = (e.RowIndex + 1).ToString()
-        Dim rowFont As New System.Drawing.Font("Century Gothic", 11.0!, _
-            System.Drawing.FontStyle.Regular, _
+        Dim rowFont As New System.Drawing.Font("Century Gothic", 11.0!,
+            System.Drawing.FontStyle.Regular,
             System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 
         Dim centerFormat = New StringFormat()
         centerFormat.Alignment = StringAlignment.Far
         centerFormat.LineAlignment = StringAlignment.Near
 
-        Dim headerBounds As Rectangle = New Rectangle(e.RowBounds.Left, e.RowBounds.Top, _
+        Dim headerBounds As Rectangle = New Rectangle(e.RowBounds.Left, e.RowBounds.Top,
         grid.RowHeadersWidth, e.RowBounds.Height)
-        e.Graphics.DrawString(rowIdx, rowFont, SystemBrushes.ControlText, _
+        e.Graphics.DrawString(rowIdx, rowFont, SystemBrushes.ControlText,
             headerBounds, centerFormat)
 
         Dim rowIdxn As String = (e.RowIndex).ToString()
@@ -29,6 +29,6 @@
     End Sub
 
     Private Sub dgv_CellValuePushed(sender As System.Object, e As System.Windows.Forms.DataGridViewCellValueEventArgs) Handles dgv.CellValuePushed
-       
+
     End Sub
 End Class
