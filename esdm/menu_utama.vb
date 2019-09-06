@@ -30,15 +30,19 @@
     End Sub
 
     Private Sub btn_perusahaan_Click(sender As System.Object, e As System.EventArgs) Handles btn_perusahaan.Click
-        PanelContainer.Controls.Add(Uc_perusahaan1)
-        Uc_perusahaan1.BringToFront()
-        Uc_perusahaan1.Show()
+        'PanelContainer.Controls.Add(Uc_perusahaan1)
+        'Uc_perusahaan1.BringToFront()
+        'Uc_perusahaan1.Show()
     End Sub
 
     Private Sub BunifuFlatButton2_Click(sender As System.Object, e As System.EventArgs) Handles BunifuFlatButton2.Click
-        PanelContainer.Controls.Add(Uc_lokasi1)
-        Uc_lokasi1.BringToFront()
-        Uc_lokasi1.Show()
+        For Each ChildForm As Form In Me.MdiChildren
+            ChildForm.Close()
+        Next
+        form_lokasi.TopLevel = False
+        PanelContainer.Controls.Add(form_lokasi)
+        form_lokasi.BringToFront()
+        form_lokasi.Show()
     End Sub
 
    
@@ -53,5 +57,9 @@
 
     Private Sub kecilkan_Click(sender As System.Object, e As System.EventArgs) Handles kecilkan.Click
         Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub Uc_lokasi1_Load(sender As Object, e As EventArgs)
+
     End Sub
 End Class

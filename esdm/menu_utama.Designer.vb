@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class menu_utama
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,12 @@ Partial Class menu_utama
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(menu_utama))
-        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.BunifuElipse = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
@@ -45,8 +45,6 @@ Partial Class menu_utama
         Me.PanelContainer = New System.Windows.Forms.Panel()
         Me.BunifuTransitionLogo = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.Uc_lokasi1 = New esdm.uc_lokasi()
-        Me.Uc_perusahaan1 = New esdm.uc_perusahaan()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,7 +52,6 @@ Partial Class menu_utama
         CType(Me.kecilkan, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.maksimal, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelContainer.SuspendLayout()
         Me.SuspendLayout()
         '
         'BunifuElipse
@@ -384,27 +381,25 @@ Partial Class menu_utama
         '
         Me.BunifuTransitionPanel.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic
         Me.BunifuTransitionPanel.Cursor = Nothing
-        Animation1.AnimateOnlyDifferences = True
-        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
-        Animation1.LeafCoeff = 0!
-        Animation1.MaxTime = 1.0!
-        Animation1.MinTime = 0!
-        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
-        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
-        Animation1.MosaicSize = 20
-        Animation1.Padding = New System.Windows.Forms.Padding(30)
-        Animation1.RotateCoeff = 0!
-        Animation1.RotateLimit = 0!
-        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
-        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
-        Animation1.TimeCoeff = 0!
-        Animation1.TransparencyCoeff = 0!
-        Me.BunifuTransitionPanel.DefaultAnimation = Animation1
+        Animation2.AnimateOnlyDifferences = True
+        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
+        Animation2.LeafCoeff = 0!
+        Animation2.MaxTime = 1.0!
+        Animation2.MinTime = 0!
+        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
+        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
+        Animation2.MosaicSize = 20
+        Animation2.Padding = New System.Windows.Forms.Padding(30)
+        Animation2.RotateCoeff = 0!
+        Animation2.RotateLimit = 0!
+        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
+        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
+        Animation2.TimeCoeff = 0!
+        Animation2.TransparencyCoeff = 0!
+        Me.BunifuTransitionPanel.DefaultAnimation = Animation2
         '
         'PanelContainer
         '
-        Me.PanelContainer.Controls.Add(Me.Uc_lokasi1)
-        Me.PanelContainer.Controls.Add(Me.Uc_perusahaan1)
         Me.BunifuTransitionLogo.SetDecoration(Me.PanelContainer, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionPanel.SetDecoration(Me.PanelContainer, BunifuAnimatorNS.DecorationType.None)
         Me.PanelContainer.Dock = System.Windows.Forms.DockStyle.Fill
@@ -417,22 +412,22 @@ Partial Class menu_utama
         '
         Me.BunifuTransitionLogo.AnimationType = BunifuAnimatorNS.AnimationType.Particles
         Me.BunifuTransitionLogo.Cursor = Nothing
-        Animation2.AnimateOnlyDifferences = True
-        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
-        Animation2.LeafCoeff = 0!
-        Animation2.MaxTime = 1.0!
-        Animation2.MinTime = 0!
-        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
-        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
-        Animation2.MosaicSize = 1
-        Animation2.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
-        Animation2.RotateCoeff = 0!
-        Animation2.RotateLimit = 0!
-        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
-        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
-        Animation2.TimeCoeff = 2.0!
-        Animation2.TransparencyCoeff = 0!
-        Me.BunifuTransitionLogo.DefaultAnimation = Animation2
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 1
+        Animation1.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 2.0!
+        Animation1.TransparencyCoeff = 0!
+        Me.BunifuTransitionLogo.DefaultAnimation = Animation1
         '
         'BunifuDragControl1
         '
@@ -440,28 +435,6 @@ Partial Class menu_utama
         Me.BunifuDragControl1.Horizontal = True
         Me.BunifuDragControl1.TargetControl = Me.Panel2
         Me.BunifuDragControl1.Vertical = True
-        '
-        'Uc_lokasi1
-        '
-        Me.BunifuTransitionPanel.SetDecoration(Me.Uc_lokasi1, BunifuAnimatorNS.DecorationType.None)
-        Me.BunifuTransitionLogo.SetDecoration(Me.Uc_lokasi1, BunifuAnimatorNS.DecorationType.None)
-        Me.Uc_lokasi1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Uc_lokasi1.Location = New System.Drawing.Point(0, 0)
-        Me.Uc_lokasi1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Uc_lokasi1.Name = "Uc_lokasi1"
-        Me.Uc_lokasi1.Size = New System.Drawing.Size(650, 582)
-        Me.Uc_lokasi1.TabIndex = 1
-        '
-        'Uc_perusahaan1
-        '
-        Me.BunifuTransitionPanel.SetDecoration(Me.Uc_perusahaan1, BunifuAnimatorNS.DecorationType.None)
-        Me.BunifuTransitionLogo.SetDecoration(Me.Uc_perusahaan1, BunifuAnimatorNS.DecorationType.None)
-        Me.Uc_perusahaan1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Uc_perusahaan1.Location = New System.Drawing.Point(0, 0)
-        Me.Uc_perusahaan1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Uc_perusahaan1.Name = "Uc_perusahaan1"
-        Me.Uc_perusahaan1.Size = New System.Drawing.Size(650, 582)
-        Me.Uc_perusahaan1.TabIndex = 0
         '
         'menu_utama
         '
@@ -488,7 +461,6 @@ Partial Class menu_utama
         CType(Me.kecilkan, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.maksimal, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelContainer.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -511,7 +483,4 @@ Partial Class menu_utama
     Friend WithEvents kecilkan As System.Windows.Forms.PictureBox
     Friend WithEvents maksimal As System.Windows.Forms.PictureBox
     Friend WithEvents PanelContainer As System.Windows.Forms.Panel
-    Friend WithEvents Uc_perusahaan1 As esdm.uc_perusahaan
-    Friend WithEvents Uc_lokasi1 As esdm.uc_lokasi
-
 End Class

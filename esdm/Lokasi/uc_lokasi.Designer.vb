@@ -22,17 +22,17 @@ Partial Class uc_lokasi
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.dgv = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.Dgv = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.idKabKota = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.namaKabKota = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.jumlahLokasi = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -45,7 +45,7 @@ Partial Class uc_lokasi
         Me.btnTambah = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -60,7 +60,7 @@ Partial Class uc_lokasi
         '
         'Panel3
         '
-        Me.Panel3.Controls.Add(Me.dgv)
+        Me.Panel3.Controls.Add(Me.Dgv)
         Me.Panel3.Controls.Add(Me.Panel2)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
@@ -68,60 +68,60 @@ Partial Class uc_lokasi
         Me.Panel3.Size = New System.Drawing.Size(615, 296)
         Me.Panel3.TabIndex = 2
         '
-        'dgv
+        'Dgv
         '
-        Me.dgv.AllowUserToAddRows = False
-        Me.dgv.AllowUserToDeleteRows = False
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
-        Me.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dgv.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.dgv.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        Me.dgv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
-        Me.dgv.ColumnHeadersHeight = 35
-        Me.dgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idKabKota, Me.namaKabKota, Me.jumlahLokasi, Me.edit, Me.hapus, Me.lokasi})
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv.DefaultCellStyle = DataGridViewCellStyle15
-        Me.dgv.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv.DoubleBuffered = True
-        Me.dgv.EnableHeadersVisualStyles = False
-        Me.dgv.GridColor = System.Drawing.Color.Gray
-        Me.dgv.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgv.HeaderForeColor = System.Drawing.Color.White
-        Me.dgv.Location = New System.Drawing.Point(0, 38)
-        Me.dgv.Name = "dgv"
-        Me.dgv.ReadOnly = True
-        Me.dgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.dgv.RowHeadersWidth = 40
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv.RowsDefaultCellStyle = DataGridViewCellStyle16
-        Me.dgv.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        Me.dgv.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgv.RowTemplate.Height = 50
-        Me.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv.Size = New System.Drawing.Size(615, 258)
-        Me.dgv.TabIndex = 0
+        Me.Dgv.AllowUserToAddRows = False
+        Me.Dgv.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dgv.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.Dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.Dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.Dgv.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.Dgv.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.Dgv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dgv.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.Dgv.ColumnHeadersHeight = 35
+        Me.Dgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idKabKota, Me.namaKabKota, Me.jumlahLokasi, Me.edit, Me.hapus, Me.lokasi})
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dgv.DefaultCellStyle = DataGridViewCellStyle7
+        Me.Dgv.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Dgv.DoubleBuffered = True
+        Me.Dgv.EnableHeadersVisualStyles = False
+        Me.Dgv.GridColor = System.Drawing.Color.Gray
+        Me.Dgv.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Dgv.HeaderForeColor = System.Drawing.Color.White
+        Me.Dgv.Location = New System.Drawing.Point(0, 38)
+        Me.Dgv.Name = "Dgv"
+        Me.Dgv.ReadOnly = True
+        Me.Dgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.Dgv.RowHeadersWidth = 40
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dgv.RowsDefaultCellStyle = DataGridViewCellStyle8
+        Me.Dgv.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        Me.Dgv.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Dgv.RowTemplate.Height = 50
+        Me.Dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.Dgv.Size = New System.Drawing.Size(615, 258)
+        Me.Dgv.TabIndex = 0
         '
         'idKabKota
         '
@@ -143,8 +143,8 @@ Partial Class uc_lokasi
         '
         'jumlahLokasi
         '
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.jumlahLokasi.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.jumlahLokasi.DefaultCellStyle = DataGridViewCellStyle3
         Me.jumlahLokasi.HeaderText = "Jumlah Lokasi"
         Me.jumlahLokasi.Name = "jumlahLokasi"
         Me.jumlahLokasi.ReadOnly = True
@@ -152,13 +152,13 @@ Partial Class uc_lokasi
         '
         'edit
         '
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White
-        Me.edit.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White
+        Me.edit.DefaultCellStyle = DataGridViewCellStyle4
         Me.edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.edit.HeaderText = "Edit"
         Me.edit.Name = "edit"
@@ -169,13 +169,13 @@ Partial Class uc_lokasi
         '
         'hapus
         '
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.Red
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Red
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White
-        Me.hapus.DefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Red
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Red
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
+        Me.hapus.DefaultCellStyle = DataGridViewCellStyle5
         Me.hapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.hapus.HeaderText = "Hapus"
         Me.hapus.Name = "hapus"
@@ -186,13 +186,13 @@ Partial Class uc_lokasi
         '
         'lokasi
         '
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.Teal
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Teal
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White
-        Me.lokasi.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Teal
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Teal
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
+        Me.lokasi.DefaultCellStyle = DataGridViewCellStyle6
         Me.lokasi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lokasi.HeaderText = "Lokasi"
         Me.lokasi.Name = "lokasi"
@@ -262,19 +262,20 @@ Partial Class uc_lokasi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.Controls.Add(Me.Panel1)
         Me.Name = "uc_lokasi"
         Me.Size = New System.Drawing.Size(615, 296)
         Me.Panel1.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
-        CType(Me.dgv, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dgv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents dgv As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents Dgv As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents BunifuMetroTextbox1 As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents Button2 As System.Windows.Forms.Button
