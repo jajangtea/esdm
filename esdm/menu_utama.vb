@@ -30,9 +30,13 @@
     End Sub
 
     Private Sub btn_perusahaan_Click(sender As System.Object, e As System.EventArgs) Handles btn_perusahaan.Click
-        'PanelContainer.Controls.Add(Uc_perusahaan1)
-        'Uc_perusahaan1.BringToFront()
-        'Uc_perusahaan1.Show()
+        For Each ChildForm As Form In Me.MdiChildren
+            ChildForm.Close()
+        Next
+        form_perusahaan.TopLevel = False
+        PanelContainer.Controls.Add(form_perusahaan)
+        form_perusahaan.BringToFront()
+        form_perusahaan.Show()
     End Sub
 
     Private Sub BunifuFlatButton2_Click(sender As System.Object, e As System.EventArgs) Handles BunifuFlatButton2.Click

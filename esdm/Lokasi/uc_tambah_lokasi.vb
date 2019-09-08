@@ -5,4 +5,5 @@
         app.TampilCombo(cbbKota, "select * from esdm_kab_kota", "namaKabKota", "idKabKota")
 
     End Sub
+
 End Class

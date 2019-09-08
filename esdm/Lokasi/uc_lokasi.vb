@@ -4,7 +4,7 @@
         ' app.TampilData(dgv, "select ek.namaKabKota as kota,el.alamatLokasi as alamat from esdm_lokasi el inner join esdm_kab_kota ek on el.idKabKota=ek.idKabKota")
         app.TampilData(Dgv, "select idKabKota,namaKabKota  from esdm_kab_kota")
     End Sub
-    Private Sub BtnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
+    Private Sub BtnTambah_Click(sender As Object, e As EventArgs)
         Dim uctambahlokasi As New uc_tambah_lokasi
 
         ' FormPeramalan.TopLevel = False
