@@ -29,8 +29,8 @@ Partial Class form_tambah
         Me.Button2 = New System.Windows.Forms.Button()
         Me.cbbKota = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.BunifuMetroTextbox1 = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Button4
@@ -41,7 +41,7 @@ Partial Class form_tambah
         Me.Button4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(286, 161)
+        Me.Button4.Location = New System.Drawing.Point(286, 189)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(92, 36)
         Me.Button4.TabIndex = 17
@@ -57,7 +57,7 @@ Partial Class form_tambah
         Me.Button1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(188, 161)
+        Me.Button1.Location = New System.Drawing.Point(188, 189)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(92, 36)
         Me.Button1.TabIndex = 18
@@ -73,7 +73,7 @@ Partial Class form_tambah
         Me.Button3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(112, 161)
+        Me.Button3.Location = New System.Drawing.Point(112, 189)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(70, 36)
         Me.Button3.TabIndex = 19
@@ -89,7 +89,7 @@ Partial Class form_tambah
         Me.Button2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(27, 161)
+        Me.Button2.Location = New System.Drawing.Point(27, 189)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(79, 36)
         Me.Button2.TabIndex = 20
@@ -103,12 +103,12 @@ Partial Class form_tambah
         Me.cbbKota.DropDownHeight = 150
         Me.cbbKota.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbbKota.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cbbKota.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbbKota.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbbKota.FormattingEnabled = True
         Me.cbbKota.IntegralHeight = False
         Me.cbbKota.Location = New System.Drawing.Point(27, 41)
         Me.cbbKota.Name = "cbbKota"
-        Me.cbbKota.Size = New System.Drawing.Size(351, 27)
+        Me.cbbKota.Size = New System.Drawing.Size(351, 25)
         Me.cbbKota.TabIndex = 16
         '
         'Label2
@@ -121,24 +121,6 @@ Partial Class form_tambah
         Me.Label2.TabIndex = 15
         Me.Label2.Text = "Alamat"
         '
-        'BunifuMetroTextbox1
-        '
-        Me.BunifuMetroTextbox1.BackColor = System.Drawing.Color.White
-        Me.BunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox1.BorderThickness = 3
-        Me.BunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.BunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox1.isPassword = False
-        Me.BunifuMetroTextbox1.Location = New System.Drawing.Point(27, 109)
-        Me.BunifuMetroTextbox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox1.Name = "BunifuMetroTextbox1"
-        Me.BunifuMetroTextbox1.Size = New System.Drawing.Size(351, 35)
-        Me.BunifuMetroTextbox1.TabIndex = 14
-        Me.BunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -149,19 +131,28 @@ Partial Class form_tambah
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Kabupaten/Kota"
         '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(27, 108)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(351, 75)
+        Me.TextBox1.TabIndex = 21
+        '
         'form_tambah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ClientSize = New System.Drawing.Size(407, 223)
+        Me.ClientSize = New System.Drawing.Size(407, 260)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.cbbKota)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.BunifuMetroTextbox1)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
@@ -180,6 +171,6 @@ Partial Class form_tambah
     Friend WithEvents Button2 As Button
     Friend WithEvents cbbKota As ComboBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents BunifuMetroTextbox1 As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents Label1 As Label
+    Friend WithEvents TextBox1 As TextBox
 End Class
