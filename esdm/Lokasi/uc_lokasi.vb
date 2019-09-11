@@ -4,15 +4,7 @@
         ' app.TampilData(dgv, "select ek.namaKabKota as kota,el.alamatLokasi as alamat from esdm_lokasi el inner join esdm_kab_kota ek on el.idKabKota=ek.idKabKota")
         app.TampilData(Dgv, "select idKabKota,namaKabKota  from esdm_kab_kota")
     End Sub
-    Private Sub BtnTambah_Click(sender As Object, e As EventArgs)
-        Dim uctambahlokasi As New uc_tambah_lokasi
 
-        ' FormPeramalan.TopLevel = False
-        form_lokasi.Controls.Add(uctambahlokasi)
-        uctambahlokasi.Show()
-        uctambahlokasi.BringToFront()
-        uctambahlokasi.Dock = DockStyle.Fill
-    End Sub
 
     Private Sub Dgv_RowPostPaint(sender As Object, e As DataGridViewRowPostPaintEventArgs) Handles Dgv.RowPostPaint
         Dim grid As DataGridView = CType(sender, DataGridView)
@@ -35,7 +27,14 @@
         Dgv.Rows(rowIdxn).Cells("jumlahLokasi").Value = Dgv.Rows(rowIdxn).Cells("idKabKota").Value.ToString
     End Sub
 
-    Private Sub Dgv_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Dgv.CellContentClick
+    Private Sub BtnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
+        'Dim uctambahlokasi As New uc_tambah_lokasi
 
+        '' FormPeramalan.TopLevel = False
+        'form_lokasi.Controls.Add(uctambahlokasi)
+        'uctambahlokasi.Show()
+        'uctambahlokasi.BringToFront()
+        'uctambahlokasi.Dock = DockStyle.Fill
+        form_tambah.ShowDialog()
     End Sub
 End Class

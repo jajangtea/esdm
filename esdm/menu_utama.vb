@@ -36,6 +36,7 @@
         form_perusahaan.TopLevel = False
         PanelContainer.Controls.Add(form_perusahaan)
         form_perusahaan.BringToFront()
+        form_perusahaan.Dock = DockStyle.Fill
         form_perusahaan.Show()
     End Sub
 

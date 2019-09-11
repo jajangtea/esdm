@@ -96,6 +96,12 @@
     <Compile Include="Lokasi\form_lokasi.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Lokasi\form_tambah.Designer.vb">
+      <DependentUpon>form_tambah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lokasi\form_tambah.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="menu_utama.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -147,12 +153,6 @@
     <Compile Include="Perusahaan\uc_perusahaan.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Lokasi\uc_tambah_lokasi.Designer.vb">
-      <DependentUpon>uc_tambah_lokasi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Lokasi\uc_tambah_lokasi.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="LoginForm1.resx">
@@ -160,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lokasi\form_lokasi.resx">
       <DependentUpon>form_lokasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lokasi\form_tambah.resx">
+      <DependentUpon>form_tambah.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menu_utama.resx">
       <DependentUpon>menu_utama.vb</DependentUpon>
@@ -181,9 +184,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Perusahaan\uc_perusahaan.resx">
       <DependentUpon>uc_perusahaan.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Lokasi\uc_tambah_lokasi.resx">
-      <DependentUpon>uc_tambah_lokasi.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -23,15 +23,26 @@ Partial Class form_perusahaan
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.PanelContainer = New System.Windows.Forms.Panel()
+        Me.Uc_perusahaan1 = New esdm.uc_perusahaan()
+        Me.PanelContainer.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelContainer
         '
+        Me.PanelContainer.Controls.Add(Me.Uc_perusahaan1)
         Me.PanelContainer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelContainer.Location = New System.Drawing.Point(0, 0)
         Me.PanelContainer.Name = "PanelContainer"
         Me.PanelContainer.Size = New System.Drawing.Size(800, 450)
         Me.PanelContainer.TabIndex = 0
+        '
+        'Uc_perusahaan1
+        '
+        Me.Uc_perusahaan1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Uc_perusahaan1.Location = New System.Drawing.Point(0, 0)
+        Me.Uc_perusahaan1.Name = "Uc_perusahaan1"
+        Me.Uc_perusahaan1.Size = New System.Drawing.Size(800, 450)
+        Me.Uc_perusahaan1.TabIndex = 0
         '
         'form_perusahaan
         '
@@ -42,9 +53,11 @@ Partial Class form_perusahaan
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "form_perusahaan"
         Me.Text = "form_perusahaan"
+        Me.PanelContainer.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents PanelContainer As Panel
+    Friend WithEvents Uc_perusahaan1 As uc_perusahaan
 End Class
