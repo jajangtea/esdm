@@ -123,7 +123,12 @@ Public Class AppCommand
             Dim sql = perintah
             Dim cmd As MySqlCommand = New MySqlCommand(sql, con)
             con.Open()
-            cmd.ExecuteNonQuery()
+
+            If cmd.ExecuteNonQuery() Then
+                MsgBox("Data berhasil disimpan.", MsgBoxStyle.Information, "Informasi")
+            Else
+                MsgBox("Data gagal disimpan.", MsgBoxStyle.Information, "Informasi")
+            End If
             con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)

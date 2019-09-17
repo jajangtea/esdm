@@ -36,18 +36,21 @@
         form_perusahaan.TopLevel = False
         PanelContainer.Controls.Add(form_perusahaan)
         form_perusahaan.BringToFront()
-        form_perusahaan.Dock = DockStyle.Fill
+
         form_perusahaan.Show()
+        form_perusahaan.Dock = DockStyle.Fill
     End Sub
 
     Private Sub BunifuFlatButton2_Click(sender As System.Object, e As System.EventArgs) Handles BunifuFlatButton2.Click
         For Each ChildForm As Form In Me.MdiChildren
             ChildForm.Close()
         Next
-        form_lokasi.TopLevel = False
-        PanelContainer.Controls.Add(form_lokasi)
-        form_lokasi.BringToFront()
-        form_lokasi.Show()
+        lokasi_table.TopLevel = False
+        PanelContainer.Controls.Add(lokasi_table)
+        lokasi_table.BringToFront()
+
+        lokasi_table.Show()
+        lokasi_table.Dock = DockStyle.Fill
     End Sub
 
    
@@ -66,5 +69,17 @@
 
     Private Sub Uc_lokasi1_Load(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub BunifuFlatButton4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
+        For Each ChildForm As Form In Me.MdiChildren
+            ChildForm.Close()
+        Next
+        wiup_table.TopLevel = False
+        PanelContainer.Controls.Add(wiup_table)
+        wiup_table.BringToFront()
+
+        wiup_table.Show()
+        wiup_table.Dock = DockStyle.Fill
     End Sub
 End Class
