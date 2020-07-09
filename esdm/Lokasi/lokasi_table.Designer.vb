@@ -22,154 +22,33 @@ Partial Class lokasi_table
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Dgv = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnTambah = New System.Windows.Forms.Button()
+        Me.txtcari = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.BtnRefresh = New System.Windows.Forms.Button()
+        Me.BtnCari = New System.Windows.Forms.Button()
         Me.idLokasi = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.namaKabKota = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.alamatLokasi = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.edit = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.hapus = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnTambah = New System.Windows.Forms.Button()
-        Me.BunifuMetroTextbox1 = New Bunifu.Framework.UI.BunifuMetroTextbox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        CType(Me.Dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        CType(Me.Dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Dgv
-        '
-        Me.Dgv.AllowUserToAddRows = False
-        Me.Dgv.AllowUserToDeleteRows = False
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Dgv.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle8
-        Me.Dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.Dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.Dgv.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.Dgv.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        Me.Dgv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Dgv.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
-        Me.Dgv.ColumnHeadersHeight = 35
-        Me.Dgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idLokasi, Me.namaKabKota, Me.alamatLokasi, Me.edit, Me.hapus})
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Dgv.DefaultCellStyle = DataGridViewCellStyle13
-        Me.Dgv.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Dgv.DoubleBuffered = True
-        Me.Dgv.EnableHeadersVisualStyles = False
-        Me.Dgv.GridColor = System.Drawing.Color.Gray
-        Me.Dgv.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Dgv.HeaderForeColor = System.Drawing.Color.White
-        Me.Dgv.Location = New System.Drawing.Point(0, 38)
-        Me.Dgv.Name = "Dgv"
-        Me.Dgv.ReadOnly = True
-        Me.Dgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.Dgv.RowHeadersWidth = 40
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Dgv.RowsDefaultCellStyle = DataGridViewCellStyle14
-        Me.Dgv.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        Me.Dgv.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Dgv.RowTemplate.Height = 50
-        Me.Dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.Dgv.Size = New System.Drawing.Size(800, 412)
-        Me.Dgv.TabIndex = 0
-        '
-        'idLokasi
-        '
-        Me.idLokasi.DataPropertyName = "idLokasi"
-        Me.idLokasi.HeaderText = "id"
-        Me.idLokasi.Name = "idLokasi"
-        Me.idLokasi.ReadOnly = True
-        Me.idLokasi.Visible = False
-        Me.idLokasi.Width = 44
-        '
-        'namaKabKota
-        '
-        Me.namaKabKota.DataPropertyName = "namaKabKota"
-        Me.namaKabKota.FillWeight = 14.01869!
-        Me.namaKabKota.HeaderText = "Kota/Kabupaten"
-        Me.namaKabKota.Name = "namaKabKota"
-        Me.namaKabKota.ReadOnly = True
-        Me.namaKabKota.Width = 138
-        '
-        'alamatLokasi
-        '
-        Me.alamatLokasi.DataPropertyName = "alamatLokasi"
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black
-        Me.alamatLokasi.DefaultCellStyle = DataGridViewCellStyle10
-        Me.alamatLokasi.HeaderText = "Lokasi"
-        Me.alamatLokasi.Name = "alamatLokasi"
-        Me.alamatLokasi.ReadOnly = True
-        Me.alamatLokasi.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.alamatLokasi.Width = 72
-        '
-        'edit
-        '
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White
-        Me.edit.DefaultCellStyle = DataGridViewCellStyle11
-        Me.edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.edit.HeaderText = ""
-        Me.edit.Name = "edit"
-        Me.edit.ReadOnly = True
-        Me.edit.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic
-        Me.edit.Text = "Edit"
-        Me.edit.UseColumnTextForButtonValue = True
-        Me.edit.Width = 17
-        '
-        'hapus
-        '
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.Red
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Red
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White
-        Me.hapus.DefaultCellStyle = DataGridViewCellStyle12
-        Me.hapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.hapus.HeaderText = ""
-        Me.hapus.Name = "hapus"
-        Me.hapus.ReadOnly = True
-        Me.hapus.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.hapus.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic
-        Me.hapus.Text = "Hapus"
-        Me.hapus.UseColumnTextForButtonValue = True
-        Me.hapus.Width = 17
         '
         'Panel1
         '
@@ -190,12 +69,76 @@ Partial Class lokasi_table
         Me.Panel3.Size = New System.Drawing.Size(800, 450)
         Me.Panel3.TabIndex = 2
         '
+        'Dgv
+        '
+        Me.Dgv.AllowUserToAddRows = False
+        Me.Dgv.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dgv.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.Dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.Dgv.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.Dgv.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.Dgv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dgv.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.Dgv.ColumnHeadersHeight = 35
+        Me.Dgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idLokasi, Me.namaKabKota, Me.alamatLokasi, Me.edit, Me.hapus})
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dgv.DefaultCellStyle = DataGridViewCellStyle7
+        Me.Dgv.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Dgv.DoubleBuffered = True
+        Me.Dgv.EnableHeadersVisualStyles = False
+        Me.Dgv.GridColor = System.Drawing.Color.Gray
+        Me.Dgv.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Dgv.HeaderForeColor = System.Drawing.Color.White
+        Me.Dgv.Location = New System.Drawing.Point(0, 38)
+        Me.Dgv.Name = "Dgv"
+        Me.Dgv.ReadOnly = True
+        Me.Dgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dgv.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
+        Me.Dgv.RowHeadersWidth = 40
+        Me.Dgv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dgv.RowsDefaultCellStyle = DataGridViewCellStyle9
+        Me.Dgv.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
+        Me.Dgv.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Dgv.RowTemplate.Height = 50
+        Me.Dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.Dgv.Size = New System.Drawing.Size(800, 412)
+        Me.Dgv.TabIndex = 0
+        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.Controls.Add(Me.btnTambah)
-        Me.Panel2.Controls.Add(Me.BunifuMetroTextbox1)
-        Me.Panel2.Controls.Add(Me.Button2)
+        Me.Panel2.Controls.Add(Me.txtcari)
+        Me.Panel2.Controls.Add(Me.BtnRefresh)
+        Me.Panel2.Controls.Add(Me.BtnCari)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
@@ -218,37 +161,128 @@ Partial Class lokasi_table
         Me.btnTambah.Text = "Tambah"
         Me.btnTambah.UseVisualStyleBackColor = False
         '
-        'BunifuMetroTextbox1
+        'txtcari
         '
-        Me.BunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox1.BorderThickness = 3
-        Me.BunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox1.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.BunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox1.isPassword = False
-        Me.BunifuMetroTextbox1.Location = New System.Drawing.Point(4, 5)
-        Me.BunifuMetroTextbox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox1.Name = "BunifuMetroTextbox1"
-        Me.BunifuMetroTextbox1.Size = New System.Drawing.Size(256, 28)
-        Me.BunifuMetroTextbox1.TabIndex = 2
-        Me.BunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtcari.BorderColorFocused = System.Drawing.Color.Blue
+        Me.txtcari.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtcari.BorderColorMouseHover = System.Drawing.Color.Blue
+        Me.txtcari.BorderThickness = 3
+        Me.txtcari.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtcari.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtcari.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtcari.isPassword = False
+        Me.txtcari.Location = New System.Drawing.Point(4, 5)
+        Me.txtcari.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtcari.Name = "txtcari"
+        Me.txtcari.Size = New System.Drawing.Size(256, 28)
+        Me.txtcari.TabIndex = 2
+        Me.txtcari.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'Button2
+        'BtnRefresh
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(259, 6)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(64, 27)
-        Me.Button2.TabIndex = 0
-        Me.Button2.Text = "Cari"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.BtnRefresh.BackColor = System.Drawing.Color.Crimson
+        Me.BtnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnRefresh.FlatAppearance.BorderSize = 0
+        Me.BtnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnRefresh.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnRefresh.ForeColor = System.Drawing.Color.White
+        Me.BtnRefresh.Location = New System.Drawing.Point(325, 6)
+        Me.BtnRefresh.Name = "BtnRefresh"
+        Me.BtnRefresh.Size = New System.Drawing.Size(64, 27)
+        Me.BtnRefresh.TabIndex = 0
+        Me.BtnRefresh.Text = "Refresh"
+        Me.BtnRefresh.UseVisualStyleBackColor = False
+        '
+        'BtnCari
+        '
+        Me.BtnCari.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnCari.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnCari.FlatAppearance.BorderSize = 0
+        Me.BtnCari.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCari.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCari.ForeColor = System.Drawing.Color.White
+        Me.BtnCari.Location = New System.Drawing.Point(259, 6)
+        Me.BtnCari.Name = "BtnCari"
+        Me.BtnCari.Size = New System.Drawing.Size(64, 27)
+        Me.BtnCari.TabIndex = 0
+        Me.BtnCari.Text = "Cari"
+        Me.BtnCari.UseVisualStyleBackColor = False
+        '
+        'idLokasi
+        '
+        Me.idLokasi.DataPropertyName = "idLokasi"
+        Me.idLokasi.HeaderText = "id"
+        Me.idLokasi.Name = "idLokasi"
+        Me.idLokasi.ReadOnly = True
+        Me.idLokasi.Visible = False
+        Me.idLokasi.Width = 44
+        '
+        'namaKabKota
+        '
+        Me.namaKabKota.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.namaKabKota.DataPropertyName = "namaKabKota"
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        Me.namaKabKota.DefaultCellStyle = DataGridViewCellStyle3
+        Me.namaKabKota.HeaderText = "Kota/Kabupaten"
+        Me.namaKabKota.Name = "namaKabKota"
+        Me.namaKabKota.ReadOnly = True
+        Me.namaKabKota.Width = 300
+        '
+        'alamatLokasi
+        '
+        Me.alamatLokasi.DataPropertyName = "alamatLokasi"
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
+        Me.alamatLokasi.DefaultCellStyle = DataGridViewCellStyle4
+        Me.alamatLokasi.HeaderText = "Lokasi"
+        Me.alamatLokasi.Name = "alamatLokasi"
+        Me.alamatLokasi.ReadOnly = True
+        Me.alamatLokasi.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.alamatLokasi.Width = 300
+        '
+        'edit
+        '
+        Me.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.edit.DefaultCellStyle = DataGridViewCellStyle5
+        Me.edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.edit.HeaderText = ""
+        Me.edit.Name = "edit"
+        Me.edit.ReadOnly = True
+        Me.edit.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic
+        Me.edit.Text = "Edit"
+        Me.edit.UseColumnTextForButtonValue = True
+        Me.edit.Width = 17
+        '
+        'hapus
+        '
+        Me.hapus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Red
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Red
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.hapus.DefaultCellStyle = DataGridViewCellStyle6
+        Me.hapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.hapus.HeaderText = ""
+        Me.hapus.Name = "hapus"
+        Me.hapus.ReadOnly = True
+        Me.hapus.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.hapus.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic
+        Me.hapus.Text = "Hapus"
+        Me.hapus.UseColumnTextForButtonValue = True
+        Me.hapus.Width = 17
         '
         'lokasi_table
         '
@@ -258,24 +292,24 @@ Partial Class lokasi_table
         Me.Controls.Add(Me.Panel1)
         Me.Name = "lokasi_table"
         Me.Text = "lokasi_table"
-        CType(Me.Dgv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
+        CType(Me.Dgv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents btnTambah As Button
+    Friend WithEvents txtcari As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents BtnCari As Button
     Friend WithEvents Dgv As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents BtnRefresh As Button
     Friend WithEvents idLokasi As DataGridViewTextBoxColumn
     Friend WithEvents namaKabKota As DataGridViewTextBoxColumn
     Friend WithEvents alamatLokasi As DataGridViewTextBoxColumn
     Friend WithEvents edit As DataGridViewButtonColumn
     Friend WithEvents hapus As DataGridViewButtonColumn
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents btnTambah As Button
-    Friend WithEvents BunifuMetroTextbox1 As Bunifu.Framework.UI.BunifuMetroTextbox
-    Friend WithEvents Button2 As Button
 End Class

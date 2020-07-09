@@ -1,20 +1,5 @@
 ﻿Public Class menu_utama
-    Private Sub Label1_Click(sender As System.Object, e As System.EventArgs) Handles Label1.Click
-        If Panel1.Width = 50 Then
-            PictureBox3.Visible = False
-            Panel1.Width = 250
-            Label1.ImageAlign = ContentAlignment.MiddleRight
-            BunifuTransitionPanel.ShowSync(Panel1)
-            BunifuTransitionLogo.ShowSync(PictureBox1)
-        Else
-            Panel1.Width = 50
-            Panel1.Visible = False
-            Label1.ImageAlign = ContentAlignment.MiddleCenter
-            BunifuTransitionPanel.ShowSync(Panel1)
-            BunifuTransitionLogo.Hide(PictureBox1)
-            PictureBox3.Visible = True
-        End If
-    End Sub
+
 
     Private Sub PictureBox2_Click(sender As System.Object, e As System.EventArgs)
         Me.Close()
@@ -33,12 +18,12 @@
         For Each ChildForm As Form In Me.MdiChildren
             ChildForm.Close()
         Next
-        form_perusahaan.TopLevel = False
-        PanelContainer.Controls.Add(form_perusahaan)
-        form_perusahaan.BringToFront()
+        perusahaan_table.TopLevel = False
+        PanelContainer.Controls.Add(perusahaan_table)
+        perusahaan_table.BringToFront()
 
-        form_perusahaan.Show()
-        form_perusahaan.Dock = DockStyle.Fill
+        perusahaan_table.Show()
+        perusahaan_table.Dock = DockStyle.Fill
     End Sub
 
     Private Sub BunifuFlatButton2_Click(sender As System.Object, e As System.EventArgs) Handles BunifuFlatButton2.Click
@@ -81,5 +66,55 @@
 
         wiup_table.Show()
         wiup_table.Dock = DockStyle.Fill
+    End Sub
+
+    Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
+        For Each ChildForm As Form In Me.MdiChildren
+            ChildForm.Close()
+        Next
+        komoditas_table.TopLevel = False
+        PanelContainer.Controls.Add(komoditas_table)
+        komoditas_table.BringToFront()
+
+        komoditas_table.Show()
+        komoditas_table.Dock = DockStyle.Fill
+    End Sub
+
+    Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
+        For Each ChildForm As Form In Me.MdiChildren
+            ChildForm.Close()
+        Next
+        iup_table.TopLevel = False
+        PanelContainer.Controls.Add(iup_table)
+        iup_table.BringToFront()
+
+        iup_table.Show()
+        iup_table.Dock = DockStyle.Fill
+    End Sub
+
+    Private Sub bntMenu_Click(sender As Object, e As EventArgs) Handles bntMenu.Click
+        If Panel1.Width = 50 Then
+            PictureBox3.Visible = False
+            Panel1.Width = 250
+            bntMenu.ImageAlign = ContentAlignment.MiddleRight
+            BunifuTransitionPanel.ShowSync(Panel1)
+            BunifuTransitionLogo.ShowSync(PictureBox1)
+        Else
+            Panel1.Width = 50
+            Panel1.Visible = False
+            bntMenu.ImageAlign = ContentAlignment.MiddleCenter
+            BunifuTransitionPanel.ShowSync(Panel1)
+            BunifuTransitionLogo.Hide(PictureBox1)
+            PictureBox3.Visible = True
+        End If
+    End Sub
+
+    Private Sub ContextMenuStripLaporan_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ContextMenuStripLaporan.Opening
+
+    End Sub
+
+    Private Sub laporan_iup_Click(sender As Object, e As EventArgs) Handles laporan_iup.Click
+        MsgBox("ok")
+
     End Sub
 End Class

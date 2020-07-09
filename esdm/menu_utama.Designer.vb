@@ -23,15 +23,16 @@ Partial Class menu_utama
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
-        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation34 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation33 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(menu_utama))
         Me.BunifuElipse = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.bntMenu = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuFlatButton6 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.ContextMenuStripLaporan = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton4 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -47,9 +48,12 @@ Partial Class menu_utama
         Me.PanelContainer = New System.Windows.Forms.Panel()
         Me.BunifuTransitionLogo = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.laporan_iup = New System.Windows.Forms.ToolStripMenuItem()
+        Me.laporan_wiup = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStripLaporan.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.kecilkan, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.maksimal, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,8 +68,8 @@ Partial Class menu_utama
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.bntMenu)
         Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.BunifuFlatButton6)
         Me.Panel1.Controls.Add(Me.BunifuFlatButton1)
@@ -80,8 +84,25 @@ Partial Class menu_utama
         Me.Panel1.Location = New System.Drawing.Point(0, 43)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(250, 582)
+        Me.Panel1.Size = New System.Drawing.Size(250, 616)
         Me.Panel1.TabIndex = 0
+        '
+        'bntMenu
+        '
+        Me.bntMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuTransitionPanel.SetDecoration(Me.bntMenu, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuTransitionLogo.SetDecoration(Me.bntMenu, BunifuAnimatorNS.DecorationType.None)
+        Me.bntMenu.Dock = System.Windows.Forms.DockStyle.Top
+        Me.bntMenu.FlatAppearance.BorderSize = 0
+        Me.bntMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bntMenu.ForeColor = System.Drawing.Color.White
+        Me.bntMenu.Image = Global.esdm.My.Resources.Resources.icons8_menu_20
+        Me.bntMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.bntMenu.Location = New System.Drawing.Point(0, 0)
+        Me.bntMenu.Name = "bntMenu"
+        Me.bntMenu.Size = New System.Drawing.Size(250, 30)
+        Me.bntMenu.TabIndex = 0
+        Me.bntMenu.UseVisualStyleBackColor = False
         '
         'PictureBox3
         '
@@ -96,26 +117,12 @@ Partial Class menu_utama
         Me.PictureBox3.TabIndex = 4
         Me.PictureBox3.TabStop = False
         '
-        'Label1
-        '
-        Me.BunifuTransitionPanel.SetDecoration(Me.Label1, BunifuAnimatorNS.DecorationType.None)
-        Me.BunifuTransitionLogo.SetDecoration(Me.Label1, BunifuAnimatorNS.DecorationType.None)
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Image = CType(resources.GetObject("Label1.Image"), System.Drawing.Image)
-        Me.Label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(250, 30)
-        Me.Label1.TabIndex = 2
-        '
         'PictureBox1
         '
         Me.BunifuTransitionPanel.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionLogo.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(67, 48)
+        Me.PictureBox1.Location = New System.Drawing.Point(67, 23)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(117, 114)
@@ -129,7 +136,8 @@ Partial Class menu_utama
         Me.BunifuFlatButton6.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton6.BorderRadius = 0
-        Me.BunifuFlatButton6.ButtonText = "     Jaminan"
+        Me.BunifuFlatButton6.ButtonText = "     Laporan"
+        Me.BunifuFlatButton6.ContextMenuStrip = Me.ContextMenuStripLaporan
         Me.BunifuFlatButton6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton6, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionPanel.SetDecoration(Me.BunifuFlatButton6, BunifuAnimatorNS.DecorationType.None)
@@ -147,7 +155,7 @@ Partial Class menu_utama
         Me.BunifuFlatButton6.IconVisible = True
         Me.BunifuFlatButton6.IconZoom = 40.0R
         Me.BunifuFlatButton6.IsTab = False
-        Me.BunifuFlatButton6.Location = New System.Drawing.Point(0, 520)
+        Me.BunifuFlatButton6.Location = New System.Drawing.Point(0, 479)
         Me.BunifuFlatButton6.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.BunifuFlatButton6.Name = "BunifuFlatButton6"
         Me.BunifuFlatButton6.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
@@ -156,10 +164,24 @@ Partial Class menu_utama
         Me.BunifuFlatButton6.selected = False
         Me.BunifuFlatButton6.Size = New System.Drawing.Size(250, 50)
         Me.BunifuFlatButton6.TabIndex = 1
-        Me.BunifuFlatButton6.Text = "     Jaminan"
+        Me.BunifuFlatButton6.Text = "     Laporan"
         Me.BunifuFlatButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton6.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton6.TextFont = New System.Drawing.Font("Century Gothic", 11.25!)
+        '
+        'ContextMenuStripLaporan
+        '
+        Me.ContextMenuStripLaporan.AutoSize = False
+        Me.ContextMenuStripLaporan.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.ContextMenuStripLaporan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BunifuTransitionLogo.SetDecoration(Me.ContextMenuStripLaporan, BunifuAnimatorNS.DecorationType.BottomMirror)
+        Me.BunifuTransitionPanel.SetDecoration(Me.ContextMenuStripLaporan, BunifuAnimatorNS.DecorationType.BottomMirror)
+        Me.ContextMenuStripLaporan.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.ContextMenuStripLaporan.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.laporan_iup, Me.laporan_wiup})
+        Me.ContextMenuStripLaporan.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table
+        Me.ContextMenuStripLaporan.Name = "ContextMenuStripLaporan"
+        Me.ContextMenuStripLaporan.ShowImageMargin = False
+        Me.ContextMenuStripLaporan.Size = New System.Drawing.Size(250, 70)
         '
         'BunifuFlatButton1
         '
@@ -185,7 +207,7 @@ Partial Class menu_utama
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 40.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(0, 468)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(0, 427)
         Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
@@ -223,7 +245,7 @@ Partial Class menu_utama
         Me.BunifuFlatButton4.IconVisible = True
         Me.BunifuFlatButton4.IconZoom = 40.0R
         Me.BunifuFlatButton4.IsTab = False
-        Me.BunifuFlatButton4.Location = New System.Drawing.Point(0, 412)
+        Me.BunifuFlatButton4.Location = New System.Drawing.Point(0, 371)
         Me.BunifuFlatButton4.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.BunifuFlatButton4.Name = "BunifuFlatButton4"
         Me.BunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
@@ -243,7 +265,7 @@ Partial Class menu_utama
         Me.BunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton3.BorderRadius = 0
-        Me.BunifuFlatButton3.ButtonText = "     Tambang"
+        Me.BunifuFlatButton3.ButtonText = "     Komoditas"
         Me.BunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton3, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionPanel.SetDecoration(Me.BunifuFlatButton3, BunifuAnimatorNS.DecorationType.None)
@@ -261,7 +283,7 @@ Partial Class menu_utama
         Me.BunifuFlatButton3.IconVisible = True
         Me.BunifuFlatButton3.IconZoom = 40.0R
         Me.BunifuFlatButton3.IsTab = False
-        Me.BunifuFlatButton3.Location = New System.Drawing.Point(0, 360)
+        Me.BunifuFlatButton3.Location = New System.Drawing.Point(0, 319)
         Me.BunifuFlatButton3.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.BunifuFlatButton3.Name = "BunifuFlatButton3"
         Me.BunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
@@ -270,7 +292,7 @@ Partial Class menu_utama
         Me.BunifuFlatButton3.selected = False
         Me.BunifuFlatButton3.Size = New System.Drawing.Size(250, 50)
         Me.BunifuFlatButton3.TabIndex = 1
-        Me.BunifuFlatButton3.Text = "     Tambang"
+        Me.BunifuFlatButton3.Text = "     Komoditas"
         Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton3.TextFont = New System.Drawing.Font("Century Gothic", 11.25!)
@@ -299,7 +321,7 @@ Partial Class menu_utama
         Me.BunifuFlatButton2.IconVisible = True
         Me.BunifuFlatButton2.IconZoom = 40.0R
         Me.BunifuFlatButton2.IsTab = False
-        Me.BunifuFlatButton2.Location = New System.Drawing.Point(0, 308)
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(0, 267)
         Me.BunifuFlatButton2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
         Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
@@ -337,7 +359,7 @@ Partial Class menu_utama
         Me.BunifuFlatButton5.IconVisible = True
         Me.BunifuFlatButton5.IconZoom = 40.0R
         Me.BunifuFlatButton5.IsTab = False
-        Me.BunifuFlatButton5.Location = New System.Drawing.Point(0, 198)
+        Me.BunifuFlatButton5.Location = New System.Drawing.Point(0, 157)
         Me.BunifuFlatButton5.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.BunifuFlatButton5.Name = "BunifuFlatButton5"
         Me.BunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
@@ -375,7 +397,7 @@ Partial Class menu_utama
         Me.btn_perusahaan.IconVisible = True
         Me.btn_perusahaan.IconZoom = 40.0R
         Me.btn_perusahaan.IsTab = False
-        Me.btn_perusahaan.Location = New System.Drawing.Point(0, 250)
+        Me.btn_perusahaan.Location = New System.Drawing.Point(0, 209)
         Me.btn_perusahaan.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btn_perusahaan.Name = "btn_perusahaan"
         Me.btn_perusahaan.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
@@ -402,7 +424,7 @@ Partial Class menu_utama
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1028, 43)
+        Me.Panel2.Size = New System.Drawing.Size(1149, 43)
         Me.Panel2.TabIndex = 1
         '
         'kecilkan
@@ -411,7 +433,7 @@ Partial Class menu_utama
         Me.BunifuTransitionPanel.SetDecoration(Me.kecilkan, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionLogo.SetDecoration(Me.kecilkan, BunifuAnimatorNS.DecorationType.None)
         Me.kecilkan.Image = CType(resources.GetObject("kecilkan.Image"), System.Drawing.Image)
-        Me.kecilkan.Location = New System.Drawing.Point(955, 11)
+        Me.kecilkan.Location = New System.Drawing.Point(1076, 11)
         Me.kecilkan.Name = "kecilkan"
         Me.kecilkan.Size = New System.Drawing.Size(20, 20)
         Me.kecilkan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -424,7 +446,7 @@ Partial Class menu_utama
         Me.BunifuTransitionPanel.SetDecoration(Me.maksimal, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionLogo.SetDecoration(Me.maksimal, BunifuAnimatorNS.DecorationType.None)
         Me.maksimal.Image = CType(resources.GetObject("maksimal.Image"), System.Drawing.Image)
-        Me.maksimal.Location = New System.Drawing.Point(975, 11)
+        Me.maksimal.Location = New System.Drawing.Point(1096, 11)
         Me.maksimal.Name = "maksimal"
         Me.maksimal.Size = New System.Drawing.Size(20, 20)
         Me.maksimal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -437,7 +459,7 @@ Partial Class menu_utama
         Me.BunifuTransitionPanel.SetDecoration(Me.PictureBox2, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionLogo.SetDecoration(Me.PictureBox2, BunifuAnimatorNS.DecorationType.None)
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(995, 11)
+        Me.PictureBox2.Location = New System.Drawing.Point(1116, 11)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -461,22 +483,22 @@ Partial Class menu_utama
         '
         Me.BunifuTransitionPanel.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic
         Me.BunifuTransitionPanel.Cursor = Nothing
-        Animation2.AnimateOnlyDifferences = True
-        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
-        Animation2.LeafCoeff = 0!
-        Animation2.MaxTime = 1.0!
-        Animation2.MinTime = 0!
-        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
-        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
-        Animation2.MosaicSize = 20
-        Animation2.Padding = New System.Windows.Forms.Padding(30)
-        Animation2.RotateCoeff = 0!
-        Animation2.RotateLimit = 0!
-        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
-        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
-        Animation2.TimeCoeff = 0!
-        Animation2.TransparencyCoeff = 0!
-        Me.BunifuTransitionPanel.DefaultAnimation = Animation2
+        Animation34.AnimateOnlyDifferences = True
+        Animation34.BlindCoeff = CType(resources.GetObject("Animation34.BlindCoeff"), System.Drawing.PointF)
+        Animation34.LeafCoeff = 0!
+        Animation34.MaxTime = 1.0!
+        Animation34.MinTime = 0!
+        Animation34.MosaicCoeff = CType(resources.GetObject("Animation34.MosaicCoeff"), System.Drawing.PointF)
+        Animation34.MosaicShift = CType(resources.GetObject("Animation34.MosaicShift"), System.Drawing.PointF)
+        Animation34.MosaicSize = 20
+        Animation34.Padding = New System.Windows.Forms.Padding(30)
+        Animation34.RotateCoeff = 0!
+        Animation34.RotateLimit = 0!
+        Animation34.ScaleCoeff = CType(resources.GetObject("Animation34.ScaleCoeff"), System.Drawing.PointF)
+        Animation34.SlideCoeff = CType(resources.GetObject("Animation34.SlideCoeff"), System.Drawing.PointF)
+        Animation34.TimeCoeff = 0!
+        Animation34.TransparencyCoeff = 0!
+        Me.BunifuTransitionPanel.DefaultAnimation = Animation34
         '
         'PanelContainer
         '
@@ -485,29 +507,29 @@ Partial Class menu_utama
         Me.PanelContainer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelContainer.Location = New System.Drawing.Point(250, 43)
         Me.PanelContainer.Name = "PanelContainer"
-        Me.PanelContainer.Size = New System.Drawing.Size(778, 582)
+        Me.PanelContainer.Size = New System.Drawing.Size(899, 616)
         Me.PanelContainer.TabIndex = 2
         '
         'BunifuTransitionLogo
         '
         Me.BunifuTransitionLogo.AnimationType = BunifuAnimatorNS.AnimationType.Particles
         Me.BunifuTransitionLogo.Cursor = Nothing
-        Animation1.AnimateOnlyDifferences = True
-        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
-        Animation1.LeafCoeff = 0!
-        Animation1.MaxTime = 1.0!
-        Animation1.MinTime = 0!
-        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
-        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
-        Animation1.MosaicSize = 1
-        Animation1.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
-        Animation1.RotateCoeff = 0!
-        Animation1.RotateLimit = 0!
-        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
-        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
-        Animation1.TimeCoeff = 2.0!
-        Animation1.TransparencyCoeff = 0!
-        Me.BunifuTransitionLogo.DefaultAnimation = Animation1
+        Animation33.AnimateOnlyDifferences = True
+        Animation33.BlindCoeff = CType(resources.GetObject("Animation33.BlindCoeff"), System.Drawing.PointF)
+        Animation33.LeafCoeff = 0!
+        Animation33.MaxTime = 1.0!
+        Animation33.MinTime = 0!
+        Animation33.MosaicCoeff = CType(resources.GetObject("Animation33.MosaicCoeff"), System.Drawing.PointF)
+        Animation33.MosaicShift = CType(resources.GetObject("Animation33.MosaicShift"), System.Drawing.PointF)
+        Animation33.MosaicSize = 1
+        Animation33.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
+        Animation33.RotateCoeff = 0!
+        Animation33.RotateLimit = 0!
+        Animation33.ScaleCoeff = CType(resources.GetObject("Animation33.ScaleCoeff"), System.Drawing.PointF)
+        Animation33.SlideCoeff = CType(resources.GetObject("Animation33.SlideCoeff"), System.Drawing.PointF)
+        Animation33.TimeCoeff = 2.0!
+        Animation33.TransparencyCoeff = 0!
+        Me.BunifuTransitionLogo.DefaultAnimation = Animation33
         '
         'BunifuDragControl1
         '
@@ -516,12 +538,35 @@ Partial Class menu_utama
         Me.BunifuDragControl1.TargetControl = Me.Panel2
         Me.BunifuDragControl1.Vertical = True
         '
+        'laporan_iup
+        '
+        Me.laporan_iup.AutoSize = False
+        Me.laporan_iup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.laporan_iup.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.laporan_iup.ForeColor = System.Drawing.Color.White
+        Me.laporan_iup.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.laporan_iup.Name = "laporan_iup"
+        Me.laporan_iup.Size = New System.Drawing.Size(230, 35)
+        Me.laporan_iup.Text = "IUP"
+        Me.laporan_iup.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay
+        '
+        'laporan_wiup
+        '
+        Me.laporan_wiup.AutoSize = False
+        Me.laporan_wiup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.laporan_wiup.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.laporan_wiup.ForeColor = System.Drawing.Color.White
+        Me.laporan_wiup.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.laporan_wiup.Name = "laporan_wiup"
+        Me.laporan_wiup.Size = New System.Drawing.Size(230, 30)
+        Me.laporan_wiup.Text = "WIUP"
+        '
         'menu_utama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1028, 625)
+        Me.ClientSize = New System.Drawing.Size(1149, 659)
         Me.Controls.Add(Me.PanelContainer)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
@@ -536,6 +581,7 @@ Partial Class menu_utama
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStripLaporan.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.kecilkan, System.ComponentModel.ISupportInitialize).EndInit()
@@ -555,7 +601,6 @@ Partial Class menu_utama
     Friend WithEvents BunifuTransitionPanel As BunifuAnimatorNS.BunifuTransition
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents BunifuTransitionLogo As BunifuAnimatorNS.BunifuTransition
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents BunifuFlatButton5 As Bunifu.Framework.UI.BunifuFlatButton
@@ -565,4 +610,8 @@ Partial Class menu_utama
     Friend WithEvents PanelContainer As System.Windows.Forms.Panel
     Friend WithEvents BunifuFlatButton6 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents bntMenu As Button
+    Friend WithEvents ContextMenuStripLaporan As ContextMenuStrip
+    Friend WithEvents laporan_iup As ToolStripMenuItem
+    Friend WithEvents laporan_wiup As ToolStripMenuItem
 End Class

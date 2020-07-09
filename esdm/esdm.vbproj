@@ -84,6 +84,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="appCommand.vb" />
+    <Compile Include="IUP\iup_table.Designer.vb">
+      <DependentUpon>iup_table.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IUP\iup_table.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUP\iup_tambah.Designer.vb">
+      <DependentUpon>iup_tambah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IUP\iup_tambah.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Komoditas\komoditas_table.Designer.vb">
+      <DependentUpon>komoditas_table.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Komoditas\komoditas_table.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Komoditas\komoditas_tambah.Designer.vb">
+      <DependentUpon>komoditas_tambah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Komoditas\komoditas_tambah.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LoginForm1.Designer.vb">
       <DependentUpon>LoginForm1.vb</DependentUpon>
     </Compile>
@@ -125,28 +149,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Perusahaan\form_perusahaan.Designer.vb">
-      <DependentUpon>form_perusahaan.vb</DependentUpon>
+    <Compile Include="Perusahaan\perusahaan_table.Designer.vb">
+      <DependentUpon>perusahaan_table.vb</DependentUpon>
     </Compile>
-    <Compile Include="Perusahaan\form_perusahaan.vb">
+    <Compile Include="Perusahaan\perusahaan_table.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Perusahaan\tambah_perusahaan.Designer.vb">
-      <DependentUpon>tambah_perusahaan.vb</DependentUpon>
+    <Compile Include="Perusahaan\perusahaan_tambah.Designer.vb">
+      <DependentUpon>perusahaan_tambah.vb</DependentUpon>
     </Compile>
-    <Compile Include="Perusahaan\tambah_perusahaan.vb">
-      <SubType>UserControl</SubType>
+    <Compile Include="Perusahaan\perusahaan_tambah.vb">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="sigDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
+    <Compile Include="sigDataSet.vb">
       <DependentUpon>sigDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Perusahaan\uc_perusahaan.Designer.vb">
-      <DependentUpon>uc_perusahaan.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Perusahaan\uc_perusahaan.vb">
-      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="WIUP\Wiup.vb" />
     <Compile Include="WIUP\wiup_table.Designer.vb">
@@ -163,6 +179,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="IUP\iup_table.resx">
+      <DependentUpon>iup_table.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUP\iup_tambah.resx">
+      <DependentUpon>iup_tambah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Komoditas\komoditas_table.resx">
+      <DependentUpon>komoditas_table.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Komoditas\komoditas_tambah.resx">
+      <DependentUpon>komoditas_tambah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\ReportWiup.rdlc" />
     <EmbeddedResource Include="LoginForm1.resx">
       <DependentUpon>LoginForm1.vb</DependentUpon>
     </EmbeddedResource>
@@ -181,14 +210,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Perusahaan\form_perusahaan.resx">
-      <DependentUpon>form_perusahaan.vb</DependentUpon>
+    <EmbeddedResource Include="Perusahaan\perusahaan_table.resx">
+      <DependentUpon>perusahaan_table.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Perusahaan\tambah_perusahaan.resx">
-      <DependentUpon>tambah_perusahaan.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Perusahaan\uc_perusahaan.resx">
-      <DependentUpon>uc_perusahaan.vb</DependentUpon>
+    <EmbeddedResource Include="Perusahaan\perusahaan_tambah.resx">
+      <DependentUpon>perusahaan_tambah.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WIUP\wiup_table.resx">
       <DependentUpon>wiup_table.vb</DependentUpon>
@@ -213,14 +239,171 @@
     </None>
     <None Include="sigDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>sigDataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="sigDataSet.xss">
       <DependentUpon>sigDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Actions-document-save-all-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bulleted List_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checklist_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Department_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Files-New-File-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeHI_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Homes_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jewel_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kde_gnome_fs_directory_accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Location_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo esdm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-kepri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map Marker_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map Marker_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marker_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marker_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mouse_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select-text-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select-text-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slave_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThumbBottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThumbMiddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThumbSpanBottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThumbSpanTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThumbTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uparrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Location_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Interface-Zoom-In-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Interface-Zoom-Out-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Very-Basic-Hand-Cursor-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom In_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom In_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom-in-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom-out-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-20.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
