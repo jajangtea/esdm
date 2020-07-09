@@ -23,8 +23,8 @@ Partial Class menu_utama
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation34 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
-        Dim Animation33 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(menu_utama))
         Me.BunifuElipse = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -33,6 +33,8 @@ Partial Class menu_utama
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuFlatButton6 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.ContextMenuStripLaporan = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.laporan_iup = New System.Windows.Forms.ToolStripMenuItem()
+        Me.laporan_wiup = New System.Windows.Forms.ToolStripMenuItem()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton4 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -48,8 +50,6 @@ Partial Class menu_utama
         Me.PanelContainer = New System.Windows.Forms.Panel()
         Me.BunifuTransitionLogo = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.laporan_iup = New System.Windows.Forms.ToolStripMenuItem()
-        Me.laporan_wiup = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -139,8 +139,8 @@ Partial Class menu_utama
         Me.BunifuFlatButton6.ButtonText = "     Laporan"
         Me.BunifuFlatButton6.ContextMenuStrip = Me.ContextMenuStripLaporan
         Me.BunifuFlatButton6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton6, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionPanel.SetDecoration(Me.BunifuFlatButton6, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton6, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton6.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton6.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton6.Iconcolor = System.Drawing.Color.Transparent
@@ -183,6 +183,29 @@ Partial Class menu_utama
         Me.ContextMenuStripLaporan.ShowImageMargin = False
         Me.ContextMenuStripLaporan.Size = New System.Drawing.Size(250, 70)
         '
+        'laporan_iup
+        '
+        Me.laporan_iup.AutoSize = False
+        Me.laporan_iup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.laporan_iup.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.laporan_iup.ForeColor = System.Drawing.Color.White
+        Me.laporan_iup.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.laporan_iup.Name = "laporan_iup"
+        Me.laporan_iup.Size = New System.Drawing.Size(230, 35)
+        Me.laporan_iup.Text = "IUP"
+        Me.laporan_iup.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay
+        '
+        'laporan_wiup
+        '
+        Me.laporan_wiup.AutoSize = False
+        Me.laporan_wiup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.laporan_wiup.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.laporan_wiup.ForeColor = System.Drawing.Color.White
+        Me.laporan_wiup.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.laporan_wiup.Name = "laporan_wiup"
+        Me.laporan_wiup.Size = New System.Drawing.Size(230, 30)
+        Me.laporan_wiup.Text = "WIUP"
+        '
         'BunifuFlatButton1
         '
         Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
@@ -191,8 +214,8 @@ Partial Class menu_utama
         Me.BunifuFlatButton1.BorderRadius = 0
         Me.BunifuFlatButton1.ButtonText = "     IUP"
         Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionPanel.SetDecoration(Me.BunifuFlatButton1, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
@@ -229,8 +252,8 @@ Partial Class menu_utama
         Me.BunifuFlatButton4.BorderRadius = 0
         Me.BunifuFlatButton4.ButtonText = "     WIUP"
         Me.BunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton4, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionPanel.SetDecoration(Me.BunifuFlatButton4, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton4, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent
@@ -267,8 +290,8 @@ Partial Class menu_utama
         Me.BunifuFlatButton3.BorderRadius = 0
         Me.BunifuFlatButton3.ButtonText = "     Komoditas"
         Me.BunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton3, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionPanel.SetDecoration(Me.BunifuFlatButton3, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton3, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent
@@ -305,8 +328,8 @@ Partial Class menu_utama
         Me.BunifuFlatButton2.BorderRadius = 0
         Me.BunifuFlatButton2.ButtonText = "     Lokasi"
         Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton2, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionPanel.SetDecoration(Me.BunifuFlatButton2, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton2, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
@@ -343,8 +366,8 @@ Partial Class menu_utama
         Me.BunifuFlatButton5.BorderRadius = 0
         Me.BunifuFlatButton5.ButtonText = "     Dashboard"
         Me.BunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton5, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionPanel.SetDecoration(Me.BunifuFlatButton5, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuTransitionLogo.SetDecoration(Me.BunifuFlatButton5, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton5.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuFlatButton5.Iconcolor = System.Drawing.Color.Transparent
@@ -381,8 +404,8 @@ Partial Class menu_utama
         Me.btn_perusahaan.BorderRadius = 0
         Me.btn_perusahaan.ButtonText = "     Perusahaan"
         Me.btn_perusahaan.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuTransitionLogo.SetDecoration(Me.btn_perusahaan, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionPanel.SetDecoration(Me.btn_perusahaan, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuTransitionLogo.SetDecoration(Me.btn_perusahaan, BunifuAnimatorNS.DecorationType.None)
         Me.btn_perusahaan.DisabledColor = System.Drawing.Color.Gray
         Me.btn_perusahaan.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_perusahaan.Iconcolor = System.Drawing.Color.Transparent
@@ -483,22 +506,22 @@ Partial Class menu_utama
         '
         Me.BunifuTransitionPanel.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic
         Me.BunifuTransitionPanel.Cursor = Nothing
-        Animation34.AnimateOnlyDifferences = True
-        Animation34.BlindCoeff = CType(resources.GetObject("Animation34.BlindCoeff"), System.Drawing.PointF)
-        Animation34.LeafCoeff = 0!
-        Animation34.MaxTime = 1.0!
-        Animation34.MinTime = 0!
-        Animation34.MosaicCoeff = CType(resources.GetObject("Animation34.MosaicCoeff"), System.Drawing.PointF)
-        Animation34.MosaicShift = CType(resources.GetObject("Animation34.MosaicShift"), System.Drawing.PointF)
-        Animation34.MosaicSize = 20
-        Animation34.Padding = New System.Windows.Forms.Padding(30)
-        Animation34.RotateCoeff = 0!
-        Animation34.RotateLimit = 0!
-        Animation34.ScaleCoeff = CType(resources.GetObject("Animation34.ScaleCoeff"), System.Drawing.PointF)
-        Animation34.SlideCoeff = CType(resources.GetObject("Animation34.SlideCoeff"), System.Drawing.PointF)
-        Animation34.TimeCoeff = 0!
-        Animation34.TransparencyCoeff = 0!
-        Me.BunifuTransitionPanel.DefaultAnimation = Animation34
+        Animation2.AnimateOnlyDifferences = True
+        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
+        Animation2.LeafCoeff = 0!
+        Animation2.MaxTime = 1.0!
+        Animation2.MinTime = 0!
+        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
+        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
+        Animation2.MosaicSize = 20
+        Animation2.Padding = New System.Windows.Forms.Padding(30)
+        Animation2.RotateCoeff = 0!
+        Animation2.RotateLimit = 0!
+        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
+        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
+        Animation2.TimeCoeff = 0!
+        Animation2.TransparencyCoeff = 0!
+        Me.BunifuTransitionPanel.DefaultAnimation = Animation2
         '
         'PanelContainer
         '
@@ -514,22 +537,22 @@ Partial Class menu_utama
         '
         Me.BunifuTransitionLogo.AnimationType = BunifuAnimatorNS.AnimationType.Particles
         Me.BunifuTransitionLogo.Cursor = Nothing
-        Animation33.AnimateOnlyDifferences = True
-        Animation33.BlindCoeff = CType(resources.GetObject("Animation33.BlindCoeff"), System.Drawing.PointF)
-        Animation33.LeafCoeff = 0!
-        Animation33.MaxTime = 1.0!
-        Animation33.MinTime = 0!
-        Animation33.MosaicCoeff = CType(resources.GetObject("Animation33.MosaicCoeff"), System.Drawing.PointF)
-        Animation33.MosaicShift = CType(resources.GetObject("Animation33.MosaicShift"), System.Drawing.PointF)
-        Animation33.MosaicSize = 1
-        Animation33.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
-        Animation33.RotateCoeff = 0!
-        Animation33.RotateLimit = 0!
-        Animation33.ScaleCoeff = CType(resources.GetObject("Animation33.ScaleCoeff"), System.Drawing.PointF)
-        Animation33.SlideCoeff = CType(resources.GetObject("Animation33.SlideCoeff"), System.Drawing.PointF)
-        Animation33.TimeCoeff = 2.0!
-        Animation33.TransparencyCoeff = 0!
-        Me.BunifuTransitionLogo.DefaultAnimation = Animation33
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 1
+        Animation1.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 2.0!
+        Animation1.TransparencyCoeff = 0!
+        Me.BunifuTransitionLogo.DefaultAnimation = Animation1
         '
         'BunifuDragControl1
         '
@@ -537,29 +560,6 @@ Partial Class menu_utama
         Me.BunifuDragControl1.Horizontal = True
         Me.BunifuDragControl1.TargetControl = Me.Panel2
         Me.BunifuDragControl1.Vertical = True
-        '
-        'laporan_iup
-        '
-        Me.laporan_iup.AutoSize = False
-        Me.laporan_iup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.laporan_iup.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.laporan_iup.ForeColor = System.Drawing.Color.White
-        Me.laporan_iup.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.laporan_iup.Name = "laporan_iup"
-        Me.laporan_iup.Size = New System.Drawing.Size(230, 35)
-        Me.laporan_iup.Text = "IUP"
-        Me.laporan_iup.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay
-        '
-        'laporan_wiup
-        '
-        Me.laporan_wiup.AutoSize = False
-        Me.laporan_wiup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.laporan_wiup.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.laporan_wiup.ForeColor = System.Drawing.Color.White
-        Me.laporan_wiup.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.laporan_wiup.Name = "laporan_wiup"
-        Me.laporan_wiup.Size = New System.Drawing.Size(230, 30)
-        Me.laporan_wiup.Text = "WIUP"
         '
         'menu_utama
         '
@@ -570,8 +570,8 @@ Partial Class menu_utama
         Me.Controls.Add(Me.PanelContainer)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
-        Me.BunifuTransitionPanel.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuTransitionLogo.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuTransitionPanel.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
         Me.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)

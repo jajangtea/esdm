@@ -117,4 +117,18 @@
         MsgBox("ok")
 
     End Sub
+
+    Private Sub laporan_wiup_Click(sender As Object, e As EventArgs) Handles laporan_wiup.Click
+        For Each ChildForm As Form In Me.MdiChildren
+            ChildForm.Close()
+        Next
+        FLaporan_wiup.TopLevel = False
+        PanelContainer.Controls.Add(FLaporan_wiup)
+        FLaporan_wiup.BringToFront()
+
+        FLaporan_wiup.Show()
+        FLaporan_wiup.Dock = DockStyle.Fill
+
+
+    End Sub
 End Class

@@ -28,6 +28,7 @@ Partial Class wiup_tambah
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.cbb_perusahaan = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -38,7 +39,6 @@ Partial Class wiup_tambah
         Me.Label8 = New System.Windows.Forms.Label()
         Me.dt_tanggal = New System.Windows.Forms.DateTimePicker()
         Me.btnSimpan = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -46,6 +46,7 @@ Partial Class wiup_tambah
         'txt_luas
         '
         Me.txt_luas.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txt_luas.ForeColor = System.Drawing.Color.Black
         Me.txt_luas.Location = New System.Drawing.Point(202, 268)
         Me.txt_luas.Name = "txt_luas"
         Me.txt_luas.Size = New System.Drawing.Size(327, 23)
@@ -56,8 +57,8 @@ Partial Class wiup_tambah
         Me.cbb_lokasi.BackColor = System.Drawing.SystemColors.Info
         Me.cbb_lokasi.DropDownHeight = 150
         Me.cbb_lokasi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbb_lokasi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cbb_lokasi.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.cbb_lokasi.ForeColor = System.Drawing.Color.Black
         Me.cbb_lokasi.FormattingEnabled = True
         Me.cbb_lokasi.IntegralHeight = False
         Me.cbb_lokasi.Location = New System.Drawing.Point(202, 215)
@@ -69,7 +70,7 @@ Partial Class wiup_tambah
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Location = New System.Drawing.Point(199, 248)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(36, 17)
@@ -80,7 +81,7 @@ Partial Class wiup_tambah
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Location = New System.Drawing.Point(199, 199)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(47, 17)
@@ -109,11 +110,20 @@ Partial Class wiup_tambah
         Me.Label7.TabIndex = 36
         Me.Label7.Text = "DATA WIUP"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.esdm.My.Resources.Resources.Department_96px
+        Me.PictureBox1.Location = New System.Drawing.Point(44, 88)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(93, 90)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(197, 9)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(188, 25)
@@ -125,8 +135,8 @@ Partial Class wiup_tambah
         Me.cbb_perusahaan.BackColor = System.Drawing.SystemColors.Info
         Me.cbb_perusahaan.DropDownHeight = 150
         Me.cbb_perusahaan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbb_perusahaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cbb_perusahaan.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.cbb_perusahaan.ForeColor = System.Drawing.Color.Black
         Me.cbb_perusahaan.FormattingEnabled = True
         Me.cbb_perusahaan.IntegralHeight = False
         Me.cbb_perusahaan.Location = New System.Drawing.Point(202, 66)
@@ -138,7 +148,7 @@ Partial Class wiup_tambah
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.ForeColor = System.Drawing.Color.Black
         Me.Label4.Location = New System.Drawing.Point(199, 46)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(84, 17)
@@ -152,6 +162,7 @@ Partial Class wiup_tambah
         Me.cbb_komoditi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbb_komoditi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cbb_komoditi.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.cbb_komoditi.ForeColor = System.Drawing.Color.Black
         Me.cbb_komoditi.FormattingEnabled = True
         Me.cbb_komoditi.IntegralHeight = False
         Me.cbb_komoditi.Location = New System.Drawing.Point(202, 317)
@@ -163,7 +174,7 @@ Partial Class wiup_tambah
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.ForeColor = System.Drawing.Color.Black
         Me.Label5.Location = New System.Drawing.Point(199, 301)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(67, 17)
@@ -173,6 +184,7 @@ Partial Class wiup_tambah
         'txt_no_izin
         '
         Me.txt_no_izin.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txt_no_izin.ForeColor = System.Drawing.Color.Black
         Me.txt_no_izin.Location = New System.Drawing.Point(202, 116)
         Me.txt_no_izin.Name = "txt_no_izin"
         Me.txt_no_izin.Size = New System.Drawing.Size(327, 23)
@@ -182,7 +194,7 @@ Partial Class wiup_tambah
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.ForeColor = System.Drawing.Color.Black
         Me.Label6.Location = New System.Drawing.Point(199, 100)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(51, 17)
@@ -193,7 +205,7 @@ Partial Class wiup_tambah
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.ForeColor = System.Drawing.Color.Black
         Me.Label8.Location = New System.Drawing.Point(199, 146)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(60, 17)
@@ -222,20 +234,11 @@ Partial Class wiup_tambah
         Me.btnSimpan.Text = "Simpan"
         Me.btnSimpan.UseVisualStyleBackColor = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.esdm.My.Resources.Resources.Department_96px
-        Me.PictureBox1.Location = New System.Drawing.Point(44, 88)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(93, 90)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'wiup_tambah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(555, 406)
         Me.Controls.Add(Me.btnSimpan)
         Me.Controls.Add(Me.dt_tanggal)
